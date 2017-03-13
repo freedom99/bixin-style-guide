@@ -4,6 +4,12 @@ $blue-hover:#005ed2;
 $light-black:#808080;
 $gray:#DDDDDD;
 $blue-gray:#879db9;
+$orange:#FF5151;
+$dark-blue:#36465D;
+$yellow: #FFE734;
 a{
   transition: 0.15s ease-in-out;
+}
+h1,h2,h3,h4,h5,p{
+  font-weight: 300;
 }
