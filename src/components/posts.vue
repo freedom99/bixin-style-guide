@@ -29,6 +29,9 @@
       <div class="post-info-src">
         <img src="../assets/src-zhihu.png" alt="知乎原文链接" width="30">
       </div>
+      <div class="abstract">
+        <p>Figma 是最近才出的一款设计软件，经历了相当的打磨，完成度很高。除了「实时协作」，还有「版本控制」、「矢量网络（Vector Network）」...</p>
+      </div>
     </div>
   </div>
 </div>
@@ -122,7 +125,14 @@ export default {
       font-size: 1rem;
       color:$dark-blue;
       opacity: 0;
-      transition: 0.35s ease-in-out;
+      transition: 0.3s ease-in-out;
+    }
+  }
+}
+@media(max-width:800px){
+  .post-info-title{
+    h3{
+      font-size:1.2rem !important;
     }
   }
 }

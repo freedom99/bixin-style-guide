@@ -69,6 +69,11 @@ export default {
   background-size: 40%;
   background-repeat: no-repeat;
   background-position: 80% 80%;
+  transition: 0.2s ease-in-out;
+  &:hover{
+    background-size: 50%;
+    background-position: 90% 80%;
+  }
   p{
    position: relative;
    &:after{
@@ -89,6 +94,11 @@ export default {
   background-size: 40%;
   background-repeat: no-repeat;
   background-position: 80% 80%;
+  transition: 0.2s ease-in-out;
+  &:hover{
+    background-size: 50%;
+    background-position: 90% 80%;
+  }
   p{
     position: relative;
     &:after{
@@ -110,6 +120,11 @@ export default {
   background-repeat: no-repeat;
   background-position: 80% 120%;
   overflow: hidden;
+  transition: 0.2s ease-in-out;
+  &:hover{
+    background-size: 45%;
+    background-position: 90% 100%;
+  }
   h1{
     font-size: 2rem;
     color:$blue;
@@ -139,6 +154,14 @@ export default {
       font-size: 12rem;
       color: $blue;
       opacity: 0.4;
+    }
+  }
+}
+@media(max-width:800px){
+  .col{
+    background-image: none;
+    h1{
+      font-size: 1.4rem;
     }
   }
 }

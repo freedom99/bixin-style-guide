@@ -1,6 +1,5 @@
 <template>
   <div class="wrapper">
-
     <section class="head-part">
       <top-nav></top-nav>
       <div class="head-hero">
@@ -63,8 +62,9 @@ polygon{
   color: #808080;
 }
 .head-hero{
-  margin-top: 8rem;
+  margin-top: 7rem;
   position: relative;
+  padding-bottom: 2rem;
   .slogan{
     position: absolute;
     top:0%;
@@ -92,7 +92,7 @@ polygon{
   .head-deco{
     position: absolute;
     right: 1%;
-    top:30%;
+    top:130px;
     letter-spacing: 5px;
     font-family: Hack;
     color:$white;
@@ -118,6 +118,20 @@ polygon{
     font-size: 1rem;
     letter-spacing: 1.3rem;
     transform: translateX(8px);
+  }
+}
+@media(max-width:800px){
+  .head-hero{
+    margin-top:3rem;
+    padding-bottom: 1rem;
+    .slogan{
+      font-size: 2rem;
+      line-height: 3rem;
+    }
+  }
+  .head-part{
+    height: 400px;
+    overflow: hidden;
   }
 }
 </style>
