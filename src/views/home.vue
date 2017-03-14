@@ -7,15 +7,7 @@
         <h1 class="slogan">简洁，清晰，逻辑。<br>融合技术与灵感，设计创造价值。<br> <p>币信产品设计团队分享文章、指南、资源的地方</p> </h1>
         <p class="head-deco">Bixin design team. +</p>
         <!-- animated bg  -->
-        <svg width="1500px" height="550px" viewBox="-2928 12920 1621 618" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <defs>
-                <radialGradient cx="88.5579586%" cy="23.007004%" fx="88.5579586%" fy="23.007004%" r="80.8306023%" id="radialGradient-1">
-                    <stop stop-color="#DEE655" offset="0%"></stop>
-                    <stop stop-color="#FF5151" offset="100%"></stop>
-                </radialGradient>
-            </defs>
-            <path d="M-2762,13301 C-1910.16146,12823.9178 -1856.69531,12827.4432 -1367,13131.5635 C-1120.52286,13284.6357 -1691.37416,13447.4051 -2210.60835,13510.4971 C-2722.97712,13572.7548 -3185.08474,13537.9536 -2762,13301 Z" id="Path-8-Copy" stroke="none" fill="url(#radialGradient-1)" fill-rule="evenodd"></path>
-        </svg>
+        <home-hero-anime></home-hero-anime>
         <!-- animated bg -->
       </div>
     </section>
@@ -26,6 +18,7 @@
       </div>
     </section>
     <sub-nav></sub-nav>
+    <posts></posts>
     <site-footer></site-footer>
   </div>
 </template>
@@ -35,6 +28,8 @@ import anime from 'animejs';
 import topNav from '../components/topNav';
 import siteFooter from '../components/siteFooter';
 import subNav from '../components/subNav';
+import homeHeroAnime from '../components/homeHeroAnime';
+import posts from '../components/posts';
 
 export default {
   name: 'home',
@@ -46,6 +41,8 @@ export default {
     topNav,
     siteFooter,
     subNav,
+    homeHeroAnime,
+    posts,
   },
   mounted: function initPage() {
     // this.tryAnime();
@@ -75,11 +72,11 @@ polygon{
     line-height: 5rem;
     font-size: 4rem;
     color: $white;
+    z-index: 10;
     font-weight: 300 !important;
     &:before {
     content: '●';
     position: absolute;
-    z-index: -1;
     color: $yellow;
     font-size: 3rem;
     font-family: serif;
@@ -95,17 +92,18 @@ polygon{
   .head-deco{
     position: absolute;
     right: 1%;
-    top:15%;
+    top:30%;
     letter-spacing: 5px;
     font-family: Hack;
-    color:$dark-blue;
+    color:$white;
     font-size: 1rem;
     transform: rotate(90deg);
+    z-index: 10;
   }
 }
 .head-part{
   height: 800px;
-  background: $orange;
+  background-image: linear-gradient(-180deg, #D10000 0%, #000000 100%);
 }
 .divider{
   text-align: center;

@@ -65,6 +65,10 @@ export default {
 }
 .col-1{
   background: $dark-blue;
+  background-image: url('../assets/article@2x.png');
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-position: 80% 80%;
   p{
    position: relative;
    &:after{
@@ -81,6 +85,10 @@ export default {
 }
 .col-2{
   background: $blue;
+  background-image: url('../assets/device@2x.png');
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-position: 80% 80%;
   p{
     position: relative;
     &:after{
@@ -97,6 +105,11 @@ export default {
 }
 .col-3{
   background: $white;
+  background-image: url('../assets/phone@2x.png');
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-position: 80% 120%;
+  overflow: hidden;
   h1{
     font-size: 2rem;
     color:$blue;
