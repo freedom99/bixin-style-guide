@@ -50,13 +50,14 @@ export default {
     this.curveTwo();
     this.curveThree();
   },
+
   methods: {
     curveOne: function curveOne() {
       anime({
         targets: '#curveOne path',
         d: 'M-2718.64561,13152.4628 C-2271.90451,12945.3053 -1367.41869,12778.4419 -1367.41869,13131.5635 C-1367.41869,13224.1746 -1691.79286,13447.4051 -2211.02704,13510.4971 C-2723.39582,13572.7548 -3196.83013,13374.2009 -2718.64561,13152.4628 Z',
-        duration: 8000,
-        easing: 'easeOutExpo',
+        duration: 10000,
+        easing: 'easeInQuad',
         loop: true,
         direction: 'alternate',
       });
@@ -65,8 +66,8 @@ export default {
       anime({
         targets: '#curveTwo path',
         d: 'M-2553.43094,13117.3583 C-2222.80537,12933.6909 -1205.39538,12808.9454 -1367.41869,13131.5635 C-1493.19663,13382.0105 -1827.8825,13477.038 -2070.64172,13460.5612 C-2313.40095,13444.0844 -2747.06407,13224.9243 -2553.43094,13117.3583 Z',
-        duration: 9000,
-        easing: 'easeOutExpo',
+        duration: 10000,
+        easing: 'easeInQuad',
         loop: true,
         direction: 'alternate',
       });
@@ -76,7 +77,7 @@ export default {
         targets: '#curveThree path',
         d: 'M-2499,13192.9142 C-2452.58142,13038.5556 -2025.70533,12995.0768 -1904.14869,13054.7078 C-1720.34687,13144.8737 -1363.91379,13396.125 -1720.34687,13410.5828 C-2076.77995,13425.0406 -2531.43857,13300.7842 -2499,13192.9142 Z',
         duration: 10000,
-        easing: 'easeOutExpo',
+        easing: 'easeInQuad',
         loop: true,
         direction: 'alternate',
       });

@@ -56,7 +56,6 @@ export default {
   justify-content: space-around;
 }
 .post-unit{
-  background-image: url('../assets/post-figma.png');
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -67,6 +66,12 @@ export default {
   min-width: calc(50% - 60px);
   border: 1px solid $gray;
   cursor: pointer;
+  &:nth-child(1){
+    background-image: url('../assets/post-figma.png');
+  }
+  &:nth-child(2){
+    background-image: url('../assets/post-mobile.jpg');
+  }
   &:hover{
     .post-info {
       padding-bottom: 5rem;

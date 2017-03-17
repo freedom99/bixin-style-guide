@@ -23,7 +23,6 @@
 </template>
 
 <script>
-import anime from 'animejs';
 import topNav from '../components/topNav';
 import siteFooter from '../components/siteFooter';
 import subNav from '../components/subNav';
@@ -43,14 +42,7 @@ export default {
     homeHeroAnime,
     posts,
   },
-  mounted: function initPage() {
-    // this.tryAnime();
-  },
   methods: {
-    tryAnime: function tryAnime() {
-      anime({
-      });
-    },
   },
 };
 </script>

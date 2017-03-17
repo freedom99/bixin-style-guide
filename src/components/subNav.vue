@@ -69,7 +69,7 @@ export default {
   background-size: 40%;
   background-repeat: no-repeat;
   background-position: 80% 80%;
-  transition: 0.2s ease-in-out;
+  transition: 0.2s ease-out;
   &:hover{
     background-size: 50%;
     background-position: 90% 80%;
@@ -94,7 +94,7 @@ export default {
   background-size: 40%;
   background-repeat: no-repeat;
   background-position: 80% 80%;
-  transition: 0.2s ease-in-out;
+  transition: 0.2s ease-out;
   &:hover{
     background-size: 50%;
     background-position: 90% 80%;
@@ -120,7 +120,7 @@ export default {
   background-repeat: no-repeat;
   background-position: 80% 120%;
   overflow: hidden;
-  transition: 0.2s ease-in-out;
+  transition: 0.2s ease-out;
   &:hover{
     background-size: 45%;
     background-position: 90% 100%;
