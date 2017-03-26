@@ -15,7 +15,7 @@ Vue.use(VueRouter);
 // 配置路由
 const routes = [
   { path: '/articles', component: articles },
-  { path: '/design-guide', component: designGuide },
+  { path: '/designGuide', component: designGuide },
   { path: '/career', component: career },
   { path: '/home', component: home },
   { path: '*', redirect: '/home' },
