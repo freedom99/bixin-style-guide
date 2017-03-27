@@ -1,61 +1,56 @@
 <template>
 <div class="wrapper">
-  <section class="head-part">
+  <header class="head-part">
     <top-nav></top-nav>
     <div class="head-hero">
-      <h3>币信正在快速成长，加入我们一起成长</h3>
-      <br>
-      <p>和优秀的同事一起工作，享受完成挑战的快乐</p>
-    </div>
-  </section>
-  <section class="two-col">
-    <div class="post-unit">
-      <div class="post-info">
-        <div class="post-info-author">
-          <img src="../assets/jobs-first@2x.png" alt="我们做什么" width="30">
-        </div>
-        <div class="post-info-title">
-          <h3>所做之事</h3>
-        </div>
+      <div class="slogon">
+        <h3>如果你富有洞见、野心勃勃，对未知抱有好奇心</h3>
+        <p>加入我们，和优秀的同事一起享受工作的快乐</p>
       </div>
-      <div class="post-body">
-        <h3>我们做什么</h3>
-        <p>币信创立于2014年，是中国最大的比特币钱包平台。除了钱包本身，还成功运营着矿池等业务。与此同时，公司旗下还有分布于西南地区的三个比特币矿场。 <br><br>我们的办公室位于中关村天创科技大厦，现在团队有40余人，一半是程序员，一半是运营人员，均是比特币爱好者。</p>
+      <div class="activity">
+        <figure class="lefthand"></figure>
+        <figure class="righthand"></figure>
+        <figure class="letter_W"></figure>
+        <figure class="letter_A"></figure>
+        <figure class="letter_N"></figure>
+        <figure class="letter_T"></figure>
+        <figure class="letter_E"></figure>
+        <figure class="letter_D"></figure>
       </div>
     </div>
 
-    <div class="post-unit">
-      <div class="post-info">
-        <div class="post-info-author">
-          <img src="../assets/jobs-idea@2x.png" alt="我们的愿景" width="30">
-        </div>
-        <div class="post-info-title">
-          <h3>所想之景</h3>
-        </div>
-      </div>
-      <div class="post-body">
-        <h3>我们的愿景</h3>
-        <p>我们的愿景是让比特币更好用，成为真正的互联网货币，让区块链重塑世界。</p>
-      </div>
-    </div>
+  </header>
 
-    <div class="post-unit">
-      <div class="post-info">
-        <div class="post-info-author">
-          <img src="../assets/jobs-demmand@2x.png" alt="我们希望你" width="30">
-        </div>
-        <div class="post-info-title">
-          <h3>所求之人</h3>
-        </div>
-      </div>
-      <div class="post-body">
-        <h3>我们希望你</h3>
-        <p>我们希望您品质优良，聪明而勤奋，技术基础良好，相信技术改变世界，充满好奇心，推崇科学、对一切未知有浓厚的探索热情。</p>
-      </div>
+  <section class="container">
+    <div class="wanted">
+      <p>我们在寻找设计领域的各类优秀人才，请不吝投递简历</p>
     </div>
-  </section>
-  <section class="blk-link-wrapper">
-    <a class="blk-link" href="mailto:tyler@bixin.com">我们正在招募设计领域的各类（产品设计、视觉设计、动效、交互）优秀人才，请不吝投递简历</a>
+    <section class="introduce">
+      <div class="post-unit flex-column">
+        <figure class="intro"></figure>
+        <div class="subtitle">所做之事</div>
+        <h2>我们做什么</h2>
+        <p>
+          币信创立于2014年，是中国最大的比特币钱包平台。除了钱包本身，还成功运营着矿池等业务。与此同时，公司旗下还有分布于西南地区的三个比特币矿场。
+        </p>
+      </div>
+      <div class="post-unit flex-column">
+        <figure class="dove"></figure>
+        <div class="subtitle">所愿之景</div>
+        <h2>我们的愿景</h2>
+        <p>
+          相信技术能改变世界，币信团队致力于让比特币更好用，成为真正的互联网货币，让区块链重塑世界。
+        </p>
+      </div>
+      <div class="post-unit flex-column">
+        <figure class="vision"></figure>
+        <div class="subtitle">所求之人</div>
+        <h2>我们希望</h2>
+        <p>
+          我们希望您品质优良，聪明而勤奋，技术基础良好，相信技术改变世界，充满好奇心，推崇科学、对一切未知有浓厚的探索热情。
+        </p>
+      </div>
+    </section>
   </section>
   <site-footer></site-footer>
 </div>
@@ -82,130 +77,180 @@ export default {
 <style scoped lang="scss">
 @import "../stylesheets/primary";
 .head-part {
-    background-image: url('../assets/career-hero@2x.png');
-    background-size: cover;
-    height: 600px;
-    background-repeat: no-repeat;
-    border-bottom: 1px solid $gray;
+  background-color: #F4F4F4;
+  height: 680px;
+  background-repeat: no-repeat;
 }
 .head-hero {
-    padding-top: 10rem;
-    text-align: center;
-    h3 {
-        display: inline-block;
-        font-size: 3rem;
-        color: $white;
-        background: $blue;
-        margin-bottom: 0;
-    }
-    p {
-        display: inline-block;
-        font-size: 1.2rem;
-        color: $white;
-        background: $blue;
-    }
-}
-.two-col {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    display: flex;
-    justify-content: space-around;
-}
-.post-unit {
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-    background: $blue;
-    display: flex;
-    flex: 0 1 auto;
-    min-height: 400px;
-    max-width: calc(30% - 60px);
-    min-width: calc(30% - 60px);
-    border: 1px solid $gray;
-    transition: 0.2s ease-out;
-    &:hover{
-      box-shadow: 0 2px 50px rgba(0,0,0,0.2);
-    }
-    &:nth-child(1){
-      background: $blue;
-    }
-    &:nth-child(2){
-      background:$orange;
-    }
-    &:nth-child(3){
-      background: $dark-blue;
-    }
-}
-.post-info{
-  background: rgba(255,255,255,0.1);
-  position: absolute;
   display: flex;
-  justify-content:space-around;
+  justify-content: center;
   align-items: center;
-  width: 100%;
-  top: 0%;
-  transition: 0.25s ease-in-out;
-  padding-top:1rem;
-  padding-bottom: 1rem;
-  .post-info-author{
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    border: 1px solid $gray;
-    overflow: hidden;
+  height: 680px;
+  h3 {
+    text-align: center;
+    font-size: 3rem;
+    color: black;
+    margin: 0;
   }
-  .post-info-title{
-    h3{
-      font-size: 1.2rem;
-      color:$white;
-      margin-bottom: 0;
-      margin-top: 0;
-    }
-    p{
-      margin-top: 0;
-      font-size: 1rem;
-      color:$dark-blue;
-      margin-bottom: 0;
-    }
+  p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: $almost-black;
+    margin-top: 2rem;
   }
 }
-.post-body{
-  padding-left: 2rem;
-  padding-right: 2rem;
-  transform: translateY(4rem);
-  h3{
-    color:$white;
-    font-size: 2rem;
-    &:after {
-    content: '';
+figure{
+  margin: 0;
+  padding: 0
+}
+.activity{
+  display: block;
+  position: absolute;
+  height: 680px;
+  width: 100vw;
+  figure{
     position: absolute;
-    background: $white;
-    width: 10rem;
-    height: 4px;
-    top:20%;
-    left:9%;
-    border-radius: 4px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation-direction: alternate;
+    transition: all 800ms cubic-bezier(0.165, 0.84, 0.44, 1);
+	  -moz-transition: all 800ms cubic-bezier(0.165, 0.84, 0.44, 1);
+	  -webkit-transition: all 800ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+}
+.lefthand{
+  background-image: url("../assets/hand-left@2.png");
+  width: 164px;
+  height: 263px;
+  transform: translate(20vw, 400px);
+}
+.righthand{
+  background-image: url("../assets/hand-right@2.png");
+  width: 76px;
+  height: 130px;
+  transform: translate(75vw, 493px);
+}
+.letter_W{
+  background-image: url("../assets/letter_W@2.png");
+  width: 45px;
+  height: 45px;
+  transform: translate(4vw, 360px);
+  animation: blink-animation 1.5s infinite;
+}
+.letter_A{
+  background-image: url("../assets/letter_A@2.png");
+  width: 39px;
+  height: 50px;
+  transform: translate(24vw, 142px);
+  animation: blink-animation 0.9s infinite;
+}
+.letter_N{
+  background-image: url("../assets/letter_N@2.png");
+  width: 40px;
+  height: 48px;
+  transform: translate(34vw, 460px);
+  animation: blink-animation 2s infinite;
+}
+.letter_T{
+  background-image: url("../assets/letter_T@2.png");
+  width: 36px;
+  height: 44px;
+  transform: translate(54vw, 178px);
+  animation: blink-animation 1s infinite;
+}
+.letter_E{
+  background-image: url("../assets/letter_E@2.png");
+  width: 36px;
+  height: 52px;
+  transform: translate(68vw, 360px);
+  animation: blink-animation 1.8s infinite;
+}
+.letter_D{
+  background-image: url("../assets/letter_D@2.png");
+  width: 35px;
+  height: 50px;
+  transform: translate(90vw, 320px);
+  animation: blink-animation 0.8s infinite;
+}
+@keyframes blink-animation{
+ 0% {opacity: 1}
+ 50% {opacity: 0.8}
+ 100% {opacity: 0.2}
+}
+@-moz-keyframes blink-animation{
+ 0% {opacity: 1}
+ 50% {opacity: 0.8}
+ 100% {opacity: 0.2}
+  }
+@-webkit-keyframes blink-animation{
+  0% {opacity: 1}
+  50% {opacity: 0.8}
+  100% {opacity: 0.2}
+}
+.container {
+  transform: translateZ(1px);
+  padding: 5rem 2rem 8rem;
+  margin: -5rem 5rem 6rem;
+  background-color: #fff;
+  box-shadow: 0 2px 10px 0 rgba(0,0,0,0.08);
+}
+.wanted{
+  padding: 5rem auto;
+  p{
+    margin: 0;
+    text-align: center;
+    color: $almost-black;
+    font-size: 1.5rem;
+  }
+}
+.introduce{
+    margin-top: 9rem;
+    display: flex;
+    figure{
+      margin-bottom: 40px;
     }
+}
+.intro{
+  background-image: url("../assets/intro@2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 90px;
+  height: 128px;
+}
+.dove{
+  background-image: url("../assets/dove@2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 134px;
+  height: 119px;
+}
+.vision{
+  background-image: url("../assets/vision@2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 85px;
+  height: 153px;
+}
+.post-unit{
+  padding: 0 2rem;
+  h2{
+    font-family: Songti SC;
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 0;
   }
   p{
-    color:$white;
     font-size: 0.9rem;
+    line-height: 1.8rem;
   }
 }
-.blk-link-wrapper{
-  text-align: center;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-.blk-link{
-  display: inline-block;
-  background: $blue;
-  color: $white;
+.subtitle{
   font-size: 1rem;
-  text-decoration: none;
-  padding-top: 0.8rem;
-  padding-bottom: 0.8rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  color: #aaa;
 }
+.flex-column{
+  -webkit-flex: 1;
+  flex: 1;
+}
+
 </style>
