@@ -91,11 +91,13 @@ polygon{
     font-size: 1rem;
     transform: rotate(90deg);
     z-index: 10;
+    transition: 0.15s east-out;
   }
 }
 .head-part{
   height: 800px;
   background-image: linear-gradient(-180deg, #D10000 0%, #000000 100%);
+  transition: 0.2s ease;
 }
 .divider{
   text-align: center;
@@ -112,18 +114,56 @@ polygon{
     transform: translateX(8px);
   }
 }
-@media(max-width:800px){
+@media(max-width:768px){
+  .head-part{
+    background-image: linear-gradient(-180deg, $orange 100%, $orange 100%);
+  }
   .head-hero{
     margin-top:3rem;
     padding-bottom: 1rem;
     .slogan{
-      font-size: 2rem;
+      font-size: 1.6rem;
       line-height: 3rem;
+      &:before{
+        content: '';
+      }
     }
   }
   .head-part{
-    height: 400px;
-    overflow: hidden;
+    height: 18rem;
+  }
+  .head-deco{
+    opacity:0 !important;
+  }
+  .divider{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    h3{
+      font-size: 1.5rem;
+    }
+    p{
+      font-size: 1rem;
+      letter-spacing: 0.1rem;
+    }
+  }
+}
+@media (min-width: 768px) and (max-width:1180px){
+  .head-deco{
+    opacity:0.5;
+  }
+  .slogan{
+    font-size: 2.5rem;
+    &:before{
+      content: '';
+    }
+  }
+  .divider{
+    h3{
+      font-size: 1.5rem;
+    }
+    p{
+      font-size: 1rem;
+    }
   }
 }
 </style>

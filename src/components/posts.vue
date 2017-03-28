@@ -54,6 +54,7 @@ export default {
   padding-bottom: 3rem;
   display: flex;
   justify-content: space-around;
+  flex-wrap: nowrap;
 }
 .post-unit{
   background-size: cover;
@@ -134,10 +135,21 @@ export default {
     }
   }
 }
-@media(max-width:800px){
+@media(max-width:768px){
   .post-info-title{
     h3{
       font-size:1.2rem !important;
+    }
+  }
+  .wrapper{
+    flex-wrap: wrap;
+  }
+  .post-unit{
+    width: 100%;
+    &:hover{
+      .post-info {
+        padding-bottom: 8rem;
+      }
     }
   }
 }

@@ -86,9 +86,15 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>@import "../stylesheets/primary";
+<style lang="scss" scoped>
+@import "../stylesheets/primary";
 svg {
     position: absolute;
     z-index: 0;
+}
+@media(max-width:800px){
+  svg {
+    display: none;
+  }
 }
 </style>

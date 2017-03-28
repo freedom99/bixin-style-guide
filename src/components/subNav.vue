@@ -35,6 +35,7 @@ export default {
   align-items: stretch;
   border-top: 1px solid $gray;
   border-bottom: 1px solid $gray;
+  flex-wrap: nowrap;
 }
 .col{
   cursor: pointer;
@@ -157,11 +158,19 @@ export default {
     }
   }
 }
-@media(max-width:800px){
+@media(max-width:768px){
+  .three-col{
+    flex-wrap: wrap;
+  }
   .col{
     background-image: none;
     h1{
       font-size: 1.4rem;
+    }
+    p{
+      &:after{
+        content: '';
+      }
     }
   }
 }
