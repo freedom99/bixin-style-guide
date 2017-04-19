@@ -1,17 +1,17 @@
 <template lang="html">
   <section class="three-col">
-    <div class="col col-1">
-      <h1>文章</h1>
-      <p>币信产品设计师的脑子里在想什么?</p>
-    </div>
-    <div class="col col-2">
+    <router-link to="/oso" class="col col-1" >
+      <h1>OSO</h1>
+      <p>一个纯 CSS 前端 UI 框架</p>
+    </router-link>
+    <router-link to="/designGuide" class="col col-2">
       <h1>指南和设计资源</h1>
       <p>一致、简洁、符合预期。</p>
-    </div>
-    <div class="col col-3">
+    </router-link>
+    <router-link to="/career" class="col col-3">
       <h1>工作机会</h1>
       <p>接受挑战，成就更好的自己。</p>
-    </div>
+    </router-link>
   </section>
 </template>
 
@@ -43,6 +43,7 @@ export default {
   padding-left: 2rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  text-decoration: none;
   h1{
     font-size: 2rem;
     color:$white;
@@ -66,13 +67,13 @@ export default {
 }
 .col-1{
   background: $dark-blue;
-  background-image: url('../assets/article@2x.png');
+  background-image: url('../assets/oso@2x.png');
   background-size: 40%;
   background-repeat: no-repeat;
   background-position: 80% 80%;
   transition: 0.2s ease-out;
   &:hover{
-    background-size: 50%;
+    background-size: 45%;
     background-position: 90% 80%;
   }
   p{
@@ -97,7 +98,7 @@ export default {
   background-position: 80% 80%;
   transition: 0.2s ease-out;
   &:hover{
-    background-size: 50%;
+    background-size: 45%;
     background-position: 90% 80%;
   }
   p{
@@ -123,7 +124,7 @@ export default {
   overflow: hidden;
   transition: 0.2s ease-out;
   &:hover{
-    background-size: 45%;
+    background-size: 43%;
     background-position: 90% 100%;
   }
   h1{

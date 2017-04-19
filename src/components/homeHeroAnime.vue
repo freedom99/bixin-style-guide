@@ -97,4 +97,9 @@ svg {
     display: none;
   }
 }
+@media(min-width:1600px){
+  svg {
+    transform: translateX(50%);
+  }
+}
 </style>

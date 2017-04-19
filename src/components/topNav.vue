@@ -6,9 +6,10 @@
       </div>
       <div class="nav-items hidden-xs">
         <ul>
-          <li><router-link to="/articles">文章</router-link></li>
-          <li><router-link to="/designGuide">设计指南与资源</router-link></li>
-          <li><router-link to="/career">工作机会</router-link></li>
+          <!-- <li><router-link to="/articles">文章</router-link></li> -->
+          <li><router-link to="/oso" active-class >OSO</router-link></li>
+          <li><router-link to="/designGuide" active-class >设计指南与资源</router-link></li>
+          <li><router-link to="/career" active-class >工作机会</router-link></li>
         </ul>
       </div>
       <div class="nav-items visible-xs">
@@ -18,7 +19,8 @@
       </div>
       <div class="nav-full visible-xs" :class="{ visible: navOpen }">
         <ul>
-          <li><router-link to="/articles">文章</router-link></li>
+          <!-- <li><router-link to="/articles">文章</router-link></li> -->
+          <li><router-link to="/articles">OSO</router-link></li>
           <li><router-link to="/designGuide">设计指南与资源</router-link></li>
           <li><router-link to="/career">工作机会</router-link></li>
         </ul>
@@ -58,13 +60,16 @@ export default {
     justify-content: center;
 }
 .top-nav {
-    width: 80%;
+    width: 45%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: #808080;
     padding: 0.5rem 1rem;
-    background: $dark-blue;
+    background: $white;
+    border-left:1px solid $gray;
+    border-right:1px solid $gray;
+    border-bottom:1px solid $gray;
     position: fixed;
     z-index: 99;
     height: 3rem;
@@ -75,14 +80,22 @@ export default {
     }
     .nav-items {
         ul li {
-            font-size: 1.2rem;
+            font-size: 1rem;
             margin-left: 1rem;
             margin-right: 1rem;
+            .router-link-active{
+              border-bottom: 4px solid $blue;
+              color:$blue;
+              &:hover{
+                color: $blue;
+              }
+            }
             a {
-                color: $blue-gray;
+                color: $dark-blue;
                 text-decoration: none;
+                padding-bottom: 0.5rem;
                 &:hover {
-                    color: $white;
+                  color: $blue;
                 }
             }
         }
@@ -90,7 +103,7 @@ export default {
 }
 .expand {
     width: 100%;
-    background: $dark-black;
+    background: $white;
 }
 .opened{
   width: 100%;
@@ -106,6 +119,7 @@ ul {
   display: block;
   height: 40px;
   width: 40px;
+  cursor: pointer;
   .nav-icon{
     position: relative;
     &::before{
@@ -145,7 +159,7 @@ ul {
 .nav-full{
   position: absolute;
   display: none;
-  top:20%;
+  top:30%;
   left: 50%;
   transform: translateX(-50%);
   ul{

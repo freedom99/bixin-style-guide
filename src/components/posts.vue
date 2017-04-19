@@ -1,6 +1,6 @@
 <template lang="html">
 <div class="wrapper">
-  <div class="post-unit">
+  <a href="https://zhuanlan.zhihu.com/p/22773414?refer=bearpaw" target="_blank" class="post-unit">
     <div class="post-info">
       <div class="post-info-author">
         <img src="../assets/tintin.jpg" alt="魔力大熊" width="50">
@@ -16,24 +16,24 @@
         <p>Figma 是最近才出的一款设计软件，经历了相当的打磨，完成度很高。除了「实时协作」，还有「版本控制」、「矢量网络（Vector Network）」...</p>
       </div>
     </div>
-  </div>
-  <div class="post-unit">
+  </a>
+  <a href="https://zhuanlan.zhihu.com/p/20900260?refer=bearpaw" target="_blank" class="post-unit">
     <div class="post-info">
       <div class="post-info-author">
         <img src="../assets/tintin.jpg" alt="魔力大熊" width="50">
       </div>
       <div class="post-info-title">
-        <h3>移动端适配经验</h3>
+        <h3>重塑「微信」：社交、支付、狂欢和窘境</h3>
         <p>魔力大熊</p>
       </div>
       <div class="post-info-src">
         <img src="../assets/src-zhihu.png" alt="知乎原文链接" width="30">
       </div>
       <div class="abstract">
-        <p>Figma 是最近才出的一款设计软件，经历了相当的打磨，完成度很高。除了「实时协作」，还有「版本控制」、「矢量网络（Vector Network）」...</p>
+        <p>如果时光倒退5年，没有人会想到直接在聊天界面里发生财务往来（哪怕今天看来这再合理不过）。2014年微信支付推出后，这股趋势就再也阻挡不住了。所以我们总是高估未来两年的变化，低估未来五年的变化。</p>
       </div>
     </div>
-  </div>
+  </a>
 </div>
 </template>
 
@@ -71,7 +71,7 @@ export default {
     background-image: url('../assets/post-figma.png');
   }
   &:nth-child(2){
-    background-image: url('../assets/post-mobile.jpg');
+    background-image: url('../assets/post-mobile.png');
   }
   &:hover{
     .post-info {

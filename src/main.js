@@ -4,6 +4,7 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 import home from './views/home';
 import articles from './views/articles';
+import oso from './views/oso';
 import designGuide from './views/designGuide';
 import career from './views/career';
 import App from './App';
@@ -15,6 +16,7 @@ Vue.use(VueRouter);
 // 配置路由
 const routes = [
   { path: '/articles', component: articles },
+  { path: '/oso', component: oso },
   { path: '/designGuide', component: designGuide },
   { path: '/career', component: career },
   { path: '/home', component: home },

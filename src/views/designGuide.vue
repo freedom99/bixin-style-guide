@@ -1,6 +1,10 @@
 <template>
 <div class="wrapper">
+  <div class="head-part">
     <top-nav></top-nav>
+    
+  </div>
+
   <site-footer></site-footer>
 </div>
 </template>
