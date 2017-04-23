@@ -1,6 +1,10 @@
 <template>
 <div class="wrapper">
   <top-nav></top-nav>
+  <div id="oso">
+  </div>
+  <div class="demo">
+  </div>
   <site-footer></site-footer>
 </div>
 </template>
@@ -23,4 +27,12 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss">@import "../stylesheets/primary";</style>
+<style scoped lang="scss">
+@import "../stylesheets/primary";
+.demo{
+  width: 350px;
+  height: 716px;
+  background: url("../assets/phone-container.png") no-repeat;
+  background-size: contain;
+}
+</style>

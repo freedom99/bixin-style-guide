@@ -60,7 +60,7 @@ export default {
     justify-content: center;
 }
 .top-nav {
-    width: 45%;
+    width: 85%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -102,7 +102,7 @@ export default {
     }
 }
 .expand {
-    width: 100%;
+    width: 100% !important;
     background: $white;
 }
 .opened{
@@ -127,7 +127,7 @@ ul {
       width: 2rem;
       top:8px;
       left: 0px;
-      background: $white;
+      background: $dark-blue;
       height: 2px;
       border-radius: 2px;
       position: absolute;
@@ -138,7 +138,7 @@ ul {
       width: 2rem;
       top:24px;
       left: 0px;
-      background: $white;
+      background: $dark-blue;
       height: 2px;
       border-radius: 2px;
       position: absolute;
@@ -161,6 +161,7 @@ ul {
   display: none;
   top:30%;
   left: 50%;
+  width: 100%;
   transform: translateX(-50%);
   ul{
     display: block;
@@ -169,7 +170,7 @@ ul {
       height: 8rem;
       font-size: 2rem;
       a{
-        color:$white;
+        color:$dark-blue;
         text-decoration: none;
         transition: 0.2s ease;
         &:focus{
@@ -181,5 +182,16 @@ ul {
 }
 .visible{
   display: block;
+}
+.navOpen{
+  width: 100%;
+}
+@media(max-width:768px){
+  .navOpen{
+    width: 100%;
+  }
+  .nav-full{
+    width: 100%;
+  }
 }
 </style>
