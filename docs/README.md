@@ -446,7 +446,7 @@ oso 使用纯粹的蓝色作为币信的品牌色，以及其他代表不同情�
         </label>
     </form>
 ```
-### CenterComp居中组件
+## CenterComp居中组件
 ![centerComp](http://ooowaexz7.bkt.clouddn.com/%E5%B1%85%E4%B8%AD%E7%BB%84%E4%BB%B6.png)
 ``` html
 <!-- 如果你想要使组件在页面中呈献居中效果，请在组件最外层包裹一层 class 为 "center-wrap" 的 div -->
@@ -480,4 +480,35 @@ oso 使用纯粹的蓝色作为币信的品牌色，以及其他代表不同情�
 
         <p class="text-center"><a href="javascript:;" class="link">文字链接</a></p>
 </div>
+```
+## Tab 切换选项
+### 顶部切换栏
+![topTab](http://ooowaexz7.bkt.clouddn.com/%E9%A1%B6%E9%83%A8%20tab.png)
+``` html
+<!-- tab 两项 -->
+<ul class="tab">
+    <li class="active"><a href="javascript:;">选项一</a></li>
+    <li><a href="javascript:;">选项二</a></li>
+</ul>
+
+<!-- Gutter -->
+<div class="gutter-20"></div>
+
+<!-- tab 三项 -->
+<ul class="tab">
+    <li class="active"><a href="javascript:;">选项一</a></li>
+    <li><a href="javascript:;">选项二</a></li>
+    <li><a href="javascript:;">选项三</a></li>
+</ul>
+
+<!-- Gutter -->
+<div class="gutter-20"></div>
+
+<!-- tab 四项 -->
+<ul class="tab">
+    <li class="active"><a href="javascript:;">选项一</a></li>
+    <li><a href="javascript:;">选项二</a></li>
+    <li><a href="javascript:;">选项三</a></li>
+    <li><a href="javascript:;">选项四</a></li>
+</ul>
 ```
