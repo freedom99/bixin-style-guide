@@ -7,7 +7,7 @@
       <div class="nav-items hidden-xs">
         <ul>
           <!-- <li><router-link to="/articles">文章</router-link></li> -->
-          <li><router-link to="/oso" active-class >OSO</router-link></li>
+          <li><a href="https://design.bixin.com/docs/">OSO</a></li>
           <li><router-link to="/designGuide" active-class >设计指南与资源</router-link></li>
           <li><router-link to="/career" active-class >工作机会</router-link></li>
         </ul>
@@ -20,7 +20,7 @@
       <div class="nav-full visible-xs" :class="{ visible: navOpen }">
         <ul>
           <!-- <li><router-link to="/articles">文章</router-link></li> -->
-          <li><router-link to="/articles">OSO</router-link></li>
+          <li><a href="https://design.bixin.com/docs/">OSO</a></li>
           <li><router-link to="/designGuide">设计指南与资源</router-link></li>
           <li><router-link to="/career">工作机会</router-link></li>
         </ul>
