@@ -1,9 +1,9 @@
 <template lang="html">
   <section class="three-col">
-    <router-link to="/oso" class="col col-1" >
+    <a href="https://design.bixin.com/docs/" class="col col-1" >
       <h1>OSO</h1>
       <p>一个纯 CSS 前端 UI 框架</p>
-    </router-link>
+    </a>
     <router-link to="/designGuide" class="col col-2">
       <h1>指南和设计资源</h1>
       <p>一致、简洁、符合预期。</p>
