@@ -13,7 +13,7 @@ OSO（读作/osō/）作为币信 UI 组件的*完整映射*，目的是方便�
 ## 快速开始
 
 ### 直接下载
-下载 [oso.css](http://vuejs-templates.github.io/webpack/) 或 [oso.min.css（推荐）](http://vuejs.github.io/vue-loader) ，并直接在您的项目引用。
+下载 [oso.css](http://ooowaexz7.bkt.clouddn.com/oso_v0.1.0.css) 或 [oso.min.css（推荐）](http://ooowaexz7.bkt.clouddn.com/oso_v0.1.0.min.css) ，并直接在您的项目引用。
 
 # 组件
 ## 基础
