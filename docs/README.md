@@ -304,6 +304,22 @@ oso 使用纯粹的蓝色作为币信的品牌色，以及其他代表不同情�
         </a>
     </div>
 ```
+#### 单行时间列表
+![singleDateCell](http://ooowaexz7.bkt.clouddn.com/%E8%A1%A8%E5%8D%95%E5%A4%B4%E9%83%A8.png)
+``` html
+<!-- 单行时间列表 -->
+    <div class="cell-wrapper cell-single">
+        <a class="cell cell-date-head" href="javascript:;">
+            <div class="cell-title">
+                    <span>04月</span>
+                    <span>2017年</span>
+            </div>
+            <div class="cell-value">
+              <p>收入<span>389,23,12.89<i>Bits</i></span>支出<span>188,21,37.12<i>Bits</i></span></p>
+            </div>
+        </a>
+    </div>
+```
 #### 左右双标题列表-带icon
 ![multiTitleCell](http://ooowaexz7.bkt.clouddn.com/%E8%B4%A6%E5%8D%95%E5%88%97%E8%A1%A8-%E5%B8%A6%20icon.png)
 ``` html
