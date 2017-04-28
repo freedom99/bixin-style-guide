@@ -17,6 +17,75 @@ OSO（读作/osō/）作为币信 UI 组件的*完整映射*，目的是方便�
 
 # 组件
 ## 基础
+### Layout布局
+![layout](http://ooowaexz7.bkt.clouddn.com/layout%20%E5%B8%83%E5%B1%80.png)
+``` html
+<!-- oso 使用 Flexbox 盒模型来完成响应式布局 -->
+<div class="row">
+  <div class="col-12"></div>
+</div>
+
+<div class="row">
+  <div class="col-6"></div>
+  <div class="col-6"></div>
+</div>
+
+<div class="row">
+  <div class="col-4"></div>
+  <div class="col-4"></div>
+  <div class="col-4"></div>
+</div>
+
+<div class="row">
+  <div class="col-3"></div>
+  <div class="col-3"></div>
+  <div class="col-3"></div>
+  <div class="col-3"></div>
+</div>
+
+<div class="row">
+  <div class="col-2"></div>
+  <div class="col-2"></div>
+  <div class="col-2"></div>
+  <div class="col-2"></div>
+  <div class="col-2"></div>
+  <div class="col-2"></div>
+</div>
+```
+### Justify 对齐和排列内容
+![align](http://ooowaexz7.bkt.clouddn.com/justify%E5%AF%B9%E9%BD%90.png)
+``` html
+<!-- 你可以方便的使用 Flexbox 来调整内容的对齐和分布方式 -->
+<div class="row justify-start">
+  <div class="col-3"></div>
+  <div class="col-3"></div>
+  <div class="col-3"></div>
+</div>
+
+<div class="row justify-center">
+  <div class="col-3"></div>
+  <div class="col-3"></div>
+  <div class="col-3"></div>
+</div>
+
+<div class="row justify-end">
+  <div class="col-3"></div>
+  <div class="col-3"></div>
+  <div class="col-3"></div>
+</div>
+
+<div class="row justify-between">
+  <div class="col-3"></div>
+  <div class="col-3"></div>
+  <div class="col-3"></div>
+</div>
+
+<div class="row justify-around">
+  <div class="col-3"></div>
+  <div class="col-3"></div>
+  <div class="col-3"></div>
+</div>
+```
 ### Color颜色
 ![color](http://ooowaexz7.bkt.clouddn.com/%E9%80%9A%E7%94%A8%E8%89%B2%E5%BD%A9%E6%9E%84%E6%88%90.png)
 oso 使用纯粹的蓝色作为币信的品牌色，以及其他代表不同情绪的颜色作为辅助色。
@@ -141,6 +210,17 @@ oso 使用纯粹的蓝色作为币信的品牌色，以及其他代表不同情�
             <textarea placeholder="占位符">
             </textarea>
         </div>
+    </form>
+```
+
+### From Group 输入控件
+![formGroup](http://ooowaexz7.bkt.clouddn.com/form-group%20%E8%BE%93%E5%85%A5%E7%BB%84%E4%BB%B6.png)
+``` html
+<!-- 输入控件列表 -->
+    <form class="form-group">
+      <input name="BTC" type="number" placeholder="价格（CNY）">
+      <input name="CNY" type="number" placeholder="数量（BTC）">
+      <input name="CNY" type="number" placeholder="总金额（CNY）">
     </form>
 ```
 ### ListCell列表
@@ -461,6 +541,79 @@ oso 使用纯粹的蓝色作为币信的品牌色，以及其他代表不同情�
           </div>
         </label>
     </form>
+```
+## Table列表
+![priceTicker](http://ooowaexz7.bkt.clouddn.com/priceTicker.png)
+``` html
+<!-- 一个典型的 Price Ticker 布局 -->
+<div class="table table-price-ticker">
+  <table>
+    <thead>
+      <tr>
+        <th></th>
+        <th>价格</th>
+        <th>数量</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="ticker-sell">
+        <th>卖5</th>
+        <th>7,800</th>
+        <th>0.085</th>
+      </tr>
+      <tr class="ticker-sell">
+        <th>卖4</th>
+        <th>7,798</th>
+        <th>0.128</th>
+      </tr>
+      <tr class="ticker-sell">
+        <th>卖3</th>
+        <th>7,787</th>
+        <th>0.514</th>
+      </tr>
+      <tr class="ticker-sell">
+        <th>卖2</th>
+        <th>7,768</th>
+        <th>18.107</th>
+      </tr>
+      <tr class="ticker-sell">
+        <th>卖1</th>
+        <th>7,759</th>
+        <th>4.000</th>
+      </tr>
+      <tr class="ticker-deal">
+        <th></th>
+        <th>7750</th>
+        <th></th>
+      </tr>
+      <tr class="ticker-buy">
+        <th>买1</th>
+        <th>7,749</th>
+        <th>2.010</th>
+      </tr>
+      <tr class="ticker-buy">
+        <th>买2</th>
+        <th>7,738</th>
+        <th>0.097</th>
+      </tr>
+      <tr class="ticker-buy">
+        <th>买3</th>
+        <th>7,725</th>
+        <th>0.159</th>
+      </tr>
+      <tr class="ticker-buy">
+        <th>买4</th>
+        <th>7,698</th>
+        <th>1.382</th>
+      </tr>
+      <tr class="ticker-buy">
+        <th>买5</th>
+        <th>7,675</th>
+        <th>1.455</th>
+      </tr>
+    </tbody>
+  </table>
+</div>
 ```
 ## CenterComp居中组件
 ![centerComp](http://ooowaexz7.bkt.clouddn.com/%E5%B1%85%E4%B8%AD%E7%BB%84%E4%BB%B6.png)
