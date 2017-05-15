@@ -106,6 +106,14 @@ oso 使用纯粹的蓝色作为币信的品牌色，以及其他代表不同情�
 <i class="icon icon-lg icon-time"></i>
 <!-- 等待 -->
 ```
+### Loading 加载中
+![loading](http://ooowaexz7.bkt.clouddn.com/%E5%8A%A0%E8%BD%BD%E4%B8%AD.png)
+``` html
+<!-- 加载旋转图标使用方法 -->
+<p class="vertical-center">
+  <i class="icon icon-loading spin"></i><span>加载中...</span>
+</p>
+```
 ### Button按钮
 主动作按钮在一个页面中尽量只有一个
 ![btn-primary](http://ooowaexz7.bkt.clouddn.com/btn-primary.png)
