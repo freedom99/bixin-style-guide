@@ -60,7 +60,8 @@ export default {
     justify-content: center;
 }
 .top-nav {
-    width: 85%;
+    width: calc(100% - 80px);
+    left: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;

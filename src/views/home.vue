@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper">
+  <div>
     <section class="head-part">
       <top-nav></top-nav>
       <div class="head-hero">
@@ -54,7 +54,7 @@ polygon{
   color: #808080;
 }
 .head-hero{
-  margin-top: 7rem;
+  transform: translateY(7rem);
   position: relative;
   padding-bottom: 2rem;
   .slogan{
@@ -119,7 +119,7 @@ polygon{
     background-image: linear-gradient(-180deg, $orange 100%, $orange 100%);
   }
   .head-hero{
-    margin-top:3rem;
+    transform: translateY(4rem);
     padding-bottom: 1rem;
     .slogan{
       font-size: 1.6rem;
