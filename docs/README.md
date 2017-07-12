@@ -12,9 +12,15 @@ OSO（读作/osō/）作为币信 UI 组件的*完整映射*，目的是方便�
 
 ## 快速开始
 
-### 直接下载
-下载 [oso.css](http://ooowaexz7.bkt.clouddn.com/oso.css.zip) 或 [oso.min.css（推荐）](http://ooowaexz7.bkt.clouddn.com/oso.min.css.zip) ，并直接在您的项目引用。
-
+### 直接下载或引用（推荐）
+下载或在您的项目中引用（推荐）[oso.css](http://design.bixin.com/static/oso.css)
+``` html
+<head>
+...
+<link rel="stylesheet" type="text/css" href="http://design.bixin.com/static/oso.css" />
+...
+</head>
+```
 # 组件
 ## 基础
 ### Layout布局
