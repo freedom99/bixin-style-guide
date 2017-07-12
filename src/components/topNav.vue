@@ -80,6 +80,7 @@ export default {
         cursor: pointer;
     }
     .nav-items {
+        padding-right: 1rem;
         ul li {
             font-size: 1rem;
             margin-left: 1rem;
@@ -105,6 +106,7 @@ export default {
 .expand {
     width: 100% !important;
     background: $white;
+    left: 0;
 }
 .opened{
   width: 100%;
