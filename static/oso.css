@@ -512,7 +512,8 @@ h3 {
   border-bottom: 1px solid #eee; }
   .cell-tiny .cell-title span {
     font-size: 1.4rem;
-    color: #808080; }
+    color: #808080;
+    min-width: 6rem; }
   .cell-tiny .cell-value span {
     font-size: 1.4rem;
     color: #000000; }
