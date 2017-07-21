@@ -56,6 +56,12 @@ h3 {
 .text-blue {
   color: #0076FF !important; }
 
+.text-orange {
+  color: #FFCD00 !important; }
+
+.text-orange-dark {
+  color: #FF6900 !important; }
+
 .text-num-lg {
   font-size: 3rem;
   color: #000000;
@@ -76,11 +82,25 @@ h3 {
   color: #FFFFFF;
   padding: 0.1rem 1.1rem;
   font-size: 1.2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   border-radius: 1.4rem; }
 
 .badge-gray {
   background: #DDDDDD;
   color: #606060; }
+
+.badge-blue {
+  background: #0076FF;
+  color: #FFFFFF; }
+
+.badge-green {
+  background: #7ED321;
+  color: #FFFFFF; }
+
+.badge-orange-dark {
+  background: #FF6900;
+  color: #FFFFFF; }
 
 /* Middle Component*/
 .center-wrapper {
@@ -138,6 +158,21 @@ h3 {
   height: 4rem;
   width: 100%; }
 
+.gutter-50 {
+  display: block;
+  height: 5rem;
+  width: 100%; }
+
+.gutter-60 {
+  display: block;
+  height: 6rem;
+  width: 100%; }
+
+.gutter-70 {
+  display: block;
+  height: 7rem;
+  width: 100%; }
+
 .cell-separator {
   display: block;
   height: 1px;
@@ -148,14 +183,7 @@ h3 {
 /*Components*/
 /*Layout*/
 .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-flow: row wrap;
-  flex-flow: row wrap;
-  width: 100%; }
+  display: flex; }
 
 .col {
   display: -webkit-box;
@@ -587,6 +615,12 @@ h3 {
     border-bottom: 1px solid #DDDDDD; }
 
 /* btn 组件*/
+.btn-text {
+  color: #0076FF;
+  display: inline-block;
+  font-size: 1.8rem;
+  text-decoration: none; }
+
 .btn-block {
   height: 5rem;
   background: #DDDDDD;
@@ -596,8 +630,8 @@ h3 {
   text-align: center;
   text-decoration: none;
   display: block;
-  margin-left: 2.5rem;
-  margin-right: 2.5rem; }
+  padding-left: 2.5rem;
+  padding-right: 2.5rem; }
 
 .btn-primary {
   background: #0076FF;
@@ -666,6 +700,20 @@ h3 {
   box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   color: #FFFFFF; }
+
+.btn-success {
+  background: #7ED321;
+  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.05) 100%);
+  background-image: linear-gradient(-180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.05) 100%);
+  box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  color: #FFFFFF; }
+  .btn-success:focus {
+    background: #6FBD19;
+    background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.05) 100%);
+    background-image: linear-gradient(-180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.05) 100%);
+    box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.3);
+    border-radius: 4px; }
 
 /* icon 组件*/
 .icon {
@@ -741,3 +789,55 @@ h3 {
 
 .text-notify-warn {
   background: #FEDFE0; }
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px; }
+
+/* Hide default HTML checkbox */
+.switch input {
+  display: none; }
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s; }
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s; }
+
+input:checked + .slider {
+  background-color: #0076FF; }
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #0076FF; }
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px); }
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px; }
+
+.slider.round:before {
+  border-radius: 50%; }
